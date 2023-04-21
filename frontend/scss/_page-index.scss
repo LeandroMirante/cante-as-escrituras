@@ -1,0 +1,509 @@
+@font-face {
+    font-family: 'Kelson Sans BG Bold';
+    src: url('../fonts/Kelson Sans Bold BG.otf');
+  }
+  
+  @font-face {
+    font-family: 'Kelson Sans BG Regular';
+    src: url('../fonts/Kelson Sans Regular BG.otf');
+  }
+  
+  :root {
+    --color-green: #B8ED75;
+    --color-orange: #F17128;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-gray: #191919;
+    --color-light-green: rgba(45, 181, 99, 0.08);
+    --color-dark-green: #1E7B43;
+    --color-light-gray: #1B1B1B;
+    --color-primary: var(--color-orange);
+  }
+  
+  $box-shadow-lg: 0rem 1rem 3rem rgba($black, .175);
+
+  .page-index {
+    font-family: 'Kelson Sans BG Regular';
+    font-style: normal;
+
+    
+  
+    header {
+      background-color: var(--color-black);
+  
+      .text_header {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--color-white);
+      }
+  
+      .header_button {
+        background-color: var(--color-white);
+        text-transform: uppercase;
+      }
+  
+      .header_button_text {
+        font-size: 18px;
+        color: var(--color-primary);
+      }
+    }
+  
+    button {
+      border-radius: 25px;
+      padding: 10px 20px;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border: none;
+    }
+  
+    h2 h3{
+      font-family: 'Kelson Sans BG Regular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 160%;
+      /* or 38px */
+      text-transform: uppercase;
+      color: #fff;
+    }
+  
+    #section1 {
+      @media (max-width: 767px) {
+        background: url('../img/BGsession1mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      /* Alterar o background para verde em telas maiores ou iguais a 768px */
+      @media (min-width: 768px) {
+        background: url('../img/BGsession1.png');
+        background-repeat: no-repeat;
+        /*background-size: cover;*/
+        background-position: top;
+      }
+      h2{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 140%;
+        color: #fff;
+        text-transform: uppercase;
+      }
+  
+      .logo {
+        height: 100px;
+      }
+  
+      .espaco {
+        padding: 200px;
+      }
+  
+      .mark_orange {
+        background-color: var(--color-primary);
+        padding: 3px;
+        border-radius: 10px;
+      }
+  
+      .mark_green {
+        color: var(--color-green);
+      }
+    }
+    $font-family: 'Kelson Sans BG Regular';
+    $color-green: #00B554;
+    $color-light-green: #B8ED75;
+    $color-dark: #1B1B1B;
+    $color-darker: #191919;
+    $color-bg-green: rgba(30, 123, 67, 0.7);
+    $color-border-green: #059342;
+    
+    #section2{
+      background-color: $color-darker;
+      .card2{
+        background-color: $color-darker;
+      }
+      .card-background{
+        background: linear-gradient(180deg, rgba(45, 181, 99, 0.08) -36.36%, rgba(45, 181, 99, 0.08) 100%);
+        border-radius: 16px;
+      }
+      h5{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color-green;
+      }
+      p{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #fff;
+      }
+    }
+    
+    #section3{
+      background-color: $color-dark;
+      .plataformas{
+        width: auto;
+      }
+      h1{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+      .mark_green{
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color-green;
+        display: block;
+      }
+      .mark_green2{
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color-light-green;
+      }
+      .linha{
+        width: 74px;
+        height: 0px;
+        border: 1px solid $color-border-green;
+      }
+      .card_green{
+        background: $color-bg-green;
+        border-radius: 16px;
+      }
+      p{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+      .foot{
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 140%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+    
+    #section4{
+      background-color: $color-dark;
+      background-image: "../img/section4/BG.png";
+      h1{
+        color: $color-light-green;
+      }
+      h2{
+        color: #fff ;
+      }
+      .mark-green{
+        color: $color-green;
+      }
+      .card-text{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 160%;
+        color: #fff;
+      }
+      .card-color{
+        background: #1C2721;
+        border-radius: 16px;
+      }}    
+
+    #section5{
+        h2{
+            color:$color-dark ; 
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 140%;
+        }
+        h3{
+            color:$color-dark ; 
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+        }
+
+    }
+
+    #section6{
+        background: #238B4D;
+        .title{
+            color: #B8ED75;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .content{
+            color: #fff;
+        }
+        .card{
+            background: #1C2721;
+            border-radius: 16px;
+            margin: 1.5rem;
+        }
+        h3{
+            color: #B8ED75;
+        }
+        h4{
+            color: #fff;
+        }
+        
+    }
+
+    #section7{
+        background-color: #1b1b1b;
+        h3{
+            color: #FFFFFF;
+        }
+        .image{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-background{
+            background: #1d2721;
+            border-radius: 16px;
+        }
+        img {
+            width: 100%; 
+            height: auto;
+            display: block;
+          }
+    }
+
+    #section8, #section9, #section10, #section11{
+        
+        background-color: #1b1b1b;
+        h3{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color: #B8ED75;
+        }
+        h4{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            color: #fff;
+        }
+        .mark-green{
+            color: #00B554;
+        }
+        .card-background{
+            background-color: #1b422c;
+            border-radius: 16px;
+        }
+        #img-tablet {
+            position: relative; 
+            top: -30px;
+          }
+        .price{
+            font-weight: 700;
+            font-size: 36px;
+            color: #B8ED75;
+        }
+        .title{
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+            line-height: 140%;
+        }
+        .content{
+            font-weight: 400;
+            font-size: 18px;
+            color: #fff;
+            line-height: 160%;
+        }
+    }
+
+    #section9 {
+        background-color: #1d2721;
+        h3{
+            color: #fff;
+        }
+    }
+
+    #section10{
+        background-color: #1b1b1b;
+        h3{
+            color: #fff;
+        }
+    }
+
+    #section11{
+        background-color: #1b1b1b;
+        .card-background{
+            background-color: #0d0e0d;
+        }
+
+        h1{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 140%;
+            color: #B8ED75;
+        }
+    }
+
+    #section12{
+        background-color: #1b1b1b;
+        .container{
+            background-color: #1e2721;
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color: #B8ED75;
+        }
+        h3, span{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+
+        .logo{
+            width: 305px;
+            height: 87.88px;
+        }
+        .icon{
+            display: inline;
+            padding: 1.5rem;
+        }
+    }
+
+    #section13{
+        background-color: #1d2721;
+        h1{
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 140%;
+            color:#B8ED75;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color:#fff;
+        }
+        p{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+
+    #section14{
+        background-color: #1c2c23;
+        .card{
+            background: linear-gradient(144.84deg, #03AD4F -9.89%, rgba(44, 93, 64, 0) 107.93%), linear-gradient(0deg, rgba(45, 181, 99, 0.08), rgba(45, 181, 99, 0.08)), rgba(45, 181, 99, 0.08);
+            border-radius: 16px;
+        }
+        .image{
+            border-radius: 50%;
+            position: relative;
+            top: 40px;
+            z-index: 1;
+        }
+        p{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            color: #fff;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color: #00B554;
+        }
+
+    }
+    #section15{
+        background-color: #1d2721;
+        .card{
+            background-color: #1f3226;
+        }
+        .card{
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color: #B8ED75;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 140%;
+            color: #fff;
+        }
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+
+    #section17{
+        h1{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color: #2C2C2C;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            color: #2C2C2C;
+        }
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #2C2C2C;
+        }
+        .card{
+            background-color: #f4f5f2;
+            padding: 1.5rem;
+            border-radius: 16px;
+        }
+    }
+
+    #footer{
+        background-color: #2c2c2c;
+        span, a{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #fff;
+        }
+        
+    }
+
+
+}

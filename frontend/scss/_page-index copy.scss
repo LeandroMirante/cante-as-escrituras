@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Kelson Sans BG Bold';
+    src: url('../fonts/Kelson Sans Bold BG.otf');
+}
+@font-face {
+    font-family: 'Kelson Sans BG Regular';
+    src: url('../fonts/Kelson Sans Regular BG.otf');
+}
+$box-shadow-lg: 0rem 1rem 3rem rgba($black, .175);
+$primary:#F17128;
+
+.page-index{
+    :root{
+        --color-green:#B8ED75;
+        --color-orange:#F17128;
+    }
+    font-family: 'Kelson Sans BG Regular';
+    font-style: normal;
+    
+
+    header{
+        background-color: black;
+        .text_header{
+            
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+    
+            text-align: center;
+    
+            color: #FFFFFF;
+        }
+        .header_button {
+
+            background-color: #FFFFFF; 
+            text-transform: uppercase;
+          }
+          .header_button_text{
+            font-size: 18px;
+            color: #F17128
+          }
+    }
+
+    button{
+        border-radius: 25px; 
+        padding: 10px 20px; 
+        background-color: #F17128; 
+        color: #fff; 
+        border: none; 
+      }
+    
+    h2{
+
+        font-family: 'Kelson Sans BG Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 160%;
+        /* or 38px */
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+      
+    #section1{
+        @media (max-width: 767px) {
+            background: url('../img/BGsession1mobile.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center ;
+          }
+      
+          /* Alterar o background para verde em telas maiores ou iguais a 768px */
+          @media (min-width: 768px) {
+            background: url('../img/BGsession1.png');
+            background-repeat: no-repeat;
+            //background-size: cover;
+            background-position: top ;
+          }
+        
+        .logo{
+            height: 100px;
+        }
+
+        .espaco{
+            padding: 200px;
+        }
+
+        .mark_orange{
+            background-color: #F17128;
+            padding: 3px;
+            border-radius: 10px;
+        }
+        .mark_green{
+            color: #B8ED75;
+        }
+        
+        
+    }
+    
+    #section2{
+
+        background-color: #191919;
+
+        .card2{
+            background-color: #191919;
+        }
+
+        .card-background{
+            background: linear-gradient(180deg, rgba(45, 181, 99, 0.08) -36.36%, rgba(45, 181, 99, 0.08) 100%);
+            border-radius: 16px;
+        }
+
+        h5{
+            font-family: 'Kelson Sans BG Regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #00B554;
+        }
+        p{
+            font-family: 'Kelson Sans BG Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #fff;
+        }
+    
+    }
+
+    #section3{
+        background-color: #1B1B1B;
+        .plataformas{
+            width: auto;
+        }
+        h1{
+            font-family: 'Kelson Sans BG Regular';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .mark_green{
+            font-family: 'Kelson Sans BG Regular';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #00B554;
+            display: block;
+        }
+        .mark_green2{
+            font-family: 'Kelson Sans BG Regular';
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #B8ED75;
+        }
+        .linha{
+            width: 74px;
+            height: 0px;
+            border: 1px solid #059342;
+        }
+        .card_green{
+            background: rgba(30, 123, 67, 0.7);
+            border-radius: 16px;
+        }
+        p{
+            font-family: 'Kelson Sans BG Regular';
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .foot{
+            font-family: 'Kelson Sans BG Regular';
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 140%;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    #section4{
+        background-color: #1B1B1B;
+        background-image: "../img/section4/BG.png";
+
+        h1{
+            color: #B8ED75;
+        }
+        h2{
+            color: #fff ;
+        }
+        .mark-green{
+            color: #00B554;
+        }
+        .card-text{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 160%;
+            color: #fff;
+        }
+
+        .card-color{
+            background: #1C2721;
+            border-radius: 16px;
+        }
+    }
+
+}

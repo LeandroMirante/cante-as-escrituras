@@ -1,0 +1,1 @@
+$("#recipeCarousel").carousel({interval:1e4}),$(".carousel .carousel-item").each(function(){var i=$(this).next();i.length||(i=$(this).siblings(":first")),i.children(":first-child").clone().appendTo($(this));for(var e=0;e<3;e++)(i=i.next()).length||(i=$(this).siblings(":first")),i.children(":first-child").clone().appendTo($(this))});

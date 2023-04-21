@@ -1,0 +1,19 @@
+/* OS CSS COMUM A TODAS AS PAGINAS VAI AQUI */
+html, body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+input {
+  font-size: 18px;
+  line-height: 180%;
+  color: #7D7D7D;
+}
